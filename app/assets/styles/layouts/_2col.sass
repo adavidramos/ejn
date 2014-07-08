@@ -1,17 +1,33 @@
 
 
 
-.local-nav-fw
-	width: 25%
-	float: left
-
 		
-.article-fw
-	width: 75%
-	margin: 0 0 3em 0
-	float: left
-	@include respond-to($bp-mid)
-		width: 100%		
+.layout-2col 
+
+	/* see also _sidebar.sass */
+
+	.sidebar
+		width: 25%
+		float: left
+		@include respond-to($bp-mid)
+			width: 100%		
+			clear: both
+			padding: 0
+			
+	main#content,
+	#content
+		width: 75%
+		margin: 0 0 3em 0
+		float: left
+		@include respond-to($bp-mid)
+			width: 100%		
+			clear: both
+
+
+// layout-sub-feature is available anywhere, 
+// even outside the context of layout-2col
+
+.layout-sub-feature
 
 	// control width of elements inside main
 	// set col width
