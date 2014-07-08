@@ -1,0 +1,85 @@
+
+/* Global navbar */
+
+.global-nav,
+.language-choice
+	float: left
+	&>ul
+		margin: 0
+		padding: 0
+		+inline-block-list
+	a
+		display: block
+		padding: 0.75em 0.5em
+		border: 0
+		background: $cT
+		color: $cT-high
+		&:hover
+			background: $cB
+	.active
+		font-weight: bold
+		font-weight: 700
+		
+.global-nav,
+.language-choice
+	@include respond-to($bp-mid)
+		clear: both
+		&>ul li
+			display: block
+			clear: both
+		a
+			padding: 0.25em 0.5em 0.25em 1.5em
+
+/* For mobile, only hide navbar when JavaScript is available to show it again */
+.js .global-nav,
+.js .language-choice
+	display: block
+	@include respond-to($bp-mid)
+		display: none
+
+.global-nav
+	width: 75%
+	@include respond-to($bp-mid)
+		width: 100%
+		a
+			border-top: 1px solid darken($cT, 4%)
+		
+.language-choice
+	width: 25%
+	text-align: right
+	@include respond-to($bp-mid)
+		width: 100%
+		text-align: left
+		a
+			background: $cT-mid
+			border-top: 1px solid darken($cT-mid, 4%)
+			color: $cT-reverse
+
+.show-mobile-nav
+	display: none
+	width: 40%
+	padding: 0.75em 0.75em
+	border: 0
+	text-align: right
+	background: $cT
+	color: $cT-high
+	&:hover
+		border: 0
+		
+.mobile-hed
+	display: none
+	width: 60%
+	padding: 0.25em 0.5em 0.75em 1.5em
+	font-size: 1em
+	font-weight: normal
+	font-weight: 400
+	a,
+	a:hover
+		border: 0
+		font-size: inherit
+
+.show-mobile-nav,
+.mobile-hed
+	@include respond-to($bp-mid)
+		display: inline-block
+		float: left

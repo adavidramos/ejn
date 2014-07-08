@@ -1,0 +1,1 @@
+console.log("'Allo 'Allo!"),$("#show-mobile-nav").click(function(){$(".nav-mobile-hidden").toggle(200)});

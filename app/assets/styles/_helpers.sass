@@ -1,0 +1,19 @@
+
+// for troubleshooting
+@mixin xx
+	border: 1px solid #FB00A1
+
+// responsive
+@mixin respond-to($breakpoint)
+	@media only screen and (max-width: $breakpoint)
+		@content
+
+// responsive
+@mixin respond-min($breakpoint)
+	@media only screen and (min-width: $breakpoint)
+		@content
+		
+// simple transition
+@mixin basic-transition
+	transition: all 0.5s
+
