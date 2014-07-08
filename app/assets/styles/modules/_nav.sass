@@ -1,6 +1,22 @@
 
 /* Global navbar */
 
+.global-head
+	width: 100%
+	margin: 0
+	padding: 0
+	background: $cN-dark
+	color: $cT-reverse
+	+clearfix
+	&__bd
+		max-width: $pageWidth
+		width: 90%
+		margin: 0 auto
+		padding: 0 0 0 0
+		@include respond-to($bp-small)
+			width: 100%
+			margin: 0
+
 .global-nav,
 .language-choice
 	float: left
@@ -12,10 +28,11 @@
 		display: block
 		padding: 0.75em 0.5em
 		border: 0
-		background: $cT
+		background: $cN-dark
 		color: $cT-high
 		&:hover
-			background: $cB
+			background: $cD
+			color: $cT
 	.active
 		font-weight: bold
 		font-weight: 700
@@ -38,12 +55,13 @@
 		display: none
 
 .global-nav
-	width: 75%
+	width: 100%
 	@include respond-to($bp-mid)
 		width: 100%
 		a
 			border-top: 1px solid darken($cT, 4%)
-		
+
+/* not used on current site; use requires making main nav narrower */		
 .language-choice
 	width: 25%
 	text-align: right
@@ -57,11 +75,11 @@
 
 .show-mobile-nav
 	display: none
-	width: 40%
+	width: 100%
 	padding: 0.75em 0.75em
 	border: 0
 	text-align: right
-	background: $cT
+	background: $cN-dark
 	color: $cT-high
 	&:hover
 		border: 0
@@ -83,3 +101,82 @@
 	@include respond-to($bp-mid)
 		display: inline-block
 		float: left
+
+// For mobile, hide the regular utility nav
+// and instead place nav items in the global navbar
+ 
+.global-nav > ul
+	.utility-nav-mobile-item
+		display: none
+		@include respond-to($bp-mid)
+			display: block	
+
+.secondary-head
+	max-width: $pageWidth
+	width: 90%
+	margin: 0 auto
+	padding: 0.25em 0 2em 0
+	+clearfix
+	@include respond-to($bp-mid)
+		width: 100%
+		margin: 0
+
+.logo
+	width: 25%
+	float: left
+	padding: 1em 2em 0 0
+	@include respond-to($bp-mid)
+		width: 50%
+		float: left
+		padding: 1em 1em 0 1em
+			
+.head-tools
+	width: 75%
+	float: left
+	@include respond-to($bp-mid)
+		width: 50%
+		float: left
+		padding: 0
+		
+.anouncements
+	width: 75%
+	float: left
+	padding: 0 0 0.1em 0
+	color: $cT-mid
+	border-bottom: 1px solid $cN-light
+	@include respond-to($bp-mid)
+		border: none
+		display: none
+	&>ul
+		+inline-block-list
+		font-size: 0.8em
+	a
+		+subdued-link
+		
+.utility-nav
+	width: 25%
+	float: left
+	padding: 0 0 0.1em 0
+	border-bottom: 1px solid $cN-light
+	text-align: right
+	color: $cT-mid
+	@include respond-to($bp-mid)
+		display: none
+	&>ul
+		+inline-block-list
+		font-size: 0.8em
+	a
+		+subdued-link
+	
+.banner
+	width: 70%
+	clear: both
+	padding: 3.8em 0 0 0
+	@include respond-to($bp-midplus)
+		padding: 1.0em 0 0 0
+	@include respond-to($bp-mid)
+		width: 100%
+		float: left
+		padding: 1em 1em 0 1em
+		text-align: right
+		
