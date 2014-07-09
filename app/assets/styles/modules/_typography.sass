@@ -27,6 +27,13 @@ body
 	
 .sc
 	@include sc
+	
+@mixin smaller
+	font-size: 0.85em
+	line-height: 1.4em
+	
+.smaller
+	+smaller
 
 
 // headers
@@ -45,7 +52,7 @@ body
 		border: none
 
 h1
-	margin: 0.75em 0 0 0
+	margin: 0.1em 0 0 0
 	font-size: 4.25em
 	line-height: 1.0em
 	font-weight: light
