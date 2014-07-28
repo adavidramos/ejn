@@ -6,35 +6,99 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>static</title>
+        <title>Earth Journalism Network</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
 		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700,200italic,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
         <link rel="stylesheet" href="/assets/styles/main.css">
-        <script src="/bower_components/modernizr/modernizr.js"></script>
+        <script src="/assets/bower_components/modernizr/modernizr.js"></script>
 
     </head>
     <body>
 
-        <div class="container article-fw">
+		<div class="visuallyhidden">
+			<h1>Earth Journalism Network</h1>
+			<a href="#content">Skip to content</a>
+		</div>
+		
+		<header class="global-head">
+			<div class="global-head__bd">
+				<a href="#" class="show-mobile-nav" id="show-mobile-nav">Menu</a>
+				<nav class="global-nav nav-mobile-hidden">
+					<ul>
+						<li><a href="/.DS_Store">Home</a></li>
+						<li><a href="/about">About</a></li>
+						<li><a href="/stories" class="active">Stories</a></li>
+						<li><a href="/resources">Reporter Resources</a></li>
+						<li><a href="/opportunities">Opportunities</a></li>
+						<li><a href="/projects">EJN Programs</a></li>
+						<li><a href="/discussions">Discussions</a></li>
+						<li><a href="/my">My EJN</a></li>
+						<li class="utility-nav-mobile-item"><a href="/search">Search</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		
+		<header class="secondary-head">
+			<div class="logo"><a href="/.DS_Store"><img src="/assets/images/logo.png" alt=""></a></div>
+			<div class="head-tools">
+				<div class="anouncements">
+					<ul>
+						<li><a href="#">Anouncement one goes here</a></li>
+						<li><a href="#">This is another anouncement</a></li>
+					</ul>
+				</div>
+				<nav class="utility-nav">
+					<!-- utility nav items *must* be duplicated in end of global nav menu, for mobile -->
+					<ul>
+						<li><a href="/search">Search</a></li>
+					</ul>
+				</nav>
+				<div class="banner"><a href="http://internews.org"><img src="/assets/images/internews.png" alt="Internews logo"></a></div>
+			</div>
+		</header>
 
-			<nav class="">
-				<ul>
-					<li><a>Local Nav Sidebar</a></li>
-					<li><a>Wheaten Biscuits</a></li>
-					<li><a>Atringent Delicacies</a></li>
-					<li><a>Mauve</a></li>
-				</ul>
-			</nav>
+        <div class="container layout-2col">
 
-			<div class="main">
+			<div class="sidebar">
+				<div class="sidebar__bd">
+					<nav class="local-nav">
+						<h3>Regions</h3>
+						<ul>
+							<li><a href="#">The Americas</a></li>
+							<li><a href="#">Asia Pacific</a></li>
+							<li><a href="#">Europe</a></li>
+							<li><a href="#">Middle East + North Africa</a></li>
+							<li><a href="#">South Asia + Central Asia</a></li>
+							<li><a href="#">Southeast Asia + Oceania</a></li>
+							<li><a href="#">Sub-Saharan Africa</a></li>
+						</ul>
+						<h3>Topics</h3>
+						<ul>
+							<li><a href="#">Agriculture</a></li>
+							<li><a href="#">Biodiversity</a></li>
+							<li><a href="#">Climate Change</a></li>
+							<li><a href="#">Cities</a></li>
+							<li><a href="#">Environmental Health</a></li>
+							<li><a href="#">Oceans</a></li>
+							<li><a href="#">Policy</a></li>
+						</ul>
+					</nav>					
+				</div>
+			</div>
+			
+			<!-- content -->
+			<div class="" id="content">
 
-				<article>
+				<article class="layout-partial-feature">
 
-					<h1>This is a Headline Proximity</h1>
-						
+					<h4 class="breadcrumbs"><a href="/stories">Stories</a> / </h4>
+			
+					<h1 class="page-hed">This is a Headline for the Article</h1>
+
 					<p class="intro">
 						“Intro graf. We all eat. It’s a universal notion: We all have this thing that we share, but everybody does it differently. Find your unique thing, couple it with the universal, and then you have the basis of a good story,” Claudia says.
 					</p>
@@ -71,7 +135,7 @@
 						You can study the historical and cultural roles of food in society at Boston University and depart with a <a href="http://www.bu.edu/met/programs/graduate/gastronomy/">master’s degree in gastronomy</a>.
 					</p>
 					<figure>
-						<img src="/assets/images/sample/river.jpg" alt="">
+						<img src="assets/images/sample/river.jpg" alt="">
 						<figcaption>
 							<p>This is a caption for the image. Photo by David Ramos.</p>
 						</figcaption>
@@ -103,7 +167,7 @@
 						This was a product of post-Revolutionary Paris, when fine dining moved from private homes to restaurants.
 					</p>
 					<figure class="figure-side-caption">
-						<img src="assets/images/sample/river.jpg" alt="">
+						<img src="/assets/images/sample/river.jpg" alt="">
 						<figcaption>
 							<p>Side caption with a caption here. Photo by David Ramos.</p>
 						</figcaption>
@@ -135,7 +199,7 @@
 						The first known restaurant guide, <em>L’Almanach des gourmands em</em> by <a href="http://en.wikipedia.org/wiki/Alexandre_Balthazar_Laurent_Grimod_de_La_Reyni%C3%A8re">Alexandre Balthazar Laurent Grimod de La Reynière</a>, was a product of post-Revolutionary Paris, when fine dining moved from private homes to restaurants.
 						You can study the historical and cultural roles of food in society at Boston University and depart with a <a href="http://www.bu.edu/met/programs/graduate/gastronomy/">master’s degree in gastronomy</a>.
 					</p>
-					<p><img src="assets/images/sample/river.jpg" alt=""></p>
+					<p><img src="/assets/images/sample/river.jpg" alt=""></p>
 					<p>
 						Above, an image in a paragraph. To such topics. A. A. Gill managed to get “dung,” “froggy,” “proctological,” and “labially” into his <a href="http://www.vanityfair.com/culture/features/2011/04/lami-louis-201104">Vanity Fair piece on L’Ami Louis</a> — and that’s just in the first four paragraphs.
 					</p>
@@ -143,7 +207,7 @@
 						The first known restaurant guide, <em>L’Almanach des gourmands em</em> by <a href="http://en.wikipedia.org/wiki/Alexandre_Balthazar_Laurent_Grimod_de_La_Reyni%C3%A8re">Alexandre Balthazar Laurent Grimod de La Reynière</a>, was a product of post-Revolutionary Paris, when fine dining moved from private homes to restaurants.
 						You can study the historical and cultural roles of food in society at Boston University and depart with a <a href="http://www.bu.edu/met/programs/graduate/gastronomy/">master’s degree in gastronomy</a>.
 					</p>
-					<figure><img src="assets/images/sample/river.jpg" alt=""></figure>
+					<figure><img src="/assets/images/sample/river.jpg" alt=""></figure>
 					<p>
 						Above, an image in a plain figure, no caption. 
 						You can study the historical and cultural roles of food in society at Boston University and depart with a <a href="http://www.bu.edu/met/programs/graduate/gastronomy/">master’s degree in gastronomy</a>.
@@ -224,22 +288,20 @@
 
 					</form>
 
+					<a href="#" class="btn-action">Action Button</a>
+					<a href="#" class="btn-alt">Alt Button</a>
+					<a href="#" class="btn-subdued">Subdued</a>
+					<a href="#" class="btn-disabled">Disabled</a>
+				
 				</article>
-
-				<a href="#" class="btn-action">Action Button</a>
-				<a href="#" class="btn-alt">Alt Button</a>
-				<a href="#" class="btn-subdued">Subdued</a>
-				<a href="#" class="btn-disabled">Disabled</a>
-			
+				
 			</div>
-			<!-- END main -->
-						
-
-
+			<!-- END content -->
+			
         </div>
 		<!-- END container -->
 
-        <script src="bower_components/jquery/jquery.js"></script>
+        <script src="/assets/bower_components/jquery/jquery.js"></script>
 
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
@@ -250,7 +312,7 @@
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
 
-        <script src="assets/scripts/main.js"></script>
+        <script src="/assets/scripts/main.js"></script>
 
 </body>
 </html>
