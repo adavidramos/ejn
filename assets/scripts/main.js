@@ -1,1 +1,1 @@
-console.log("'Allo 'Allo!"),$("#show-mobile-nav").click(function(){$(".nav-mobile-hidden").toggle(200)});
+console.log("'Allo 'Allo!"),$("#show-mobile-nav").click(function(){$(".nav-mobile-hidden").toggle(200)});var container=document.querySelector(".masonry-layout"),msnry=new Masonry(container,{itemSelector:"section"});
