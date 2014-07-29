@@ -238,9 +238,17 @@
 			
         </div>
 		<!-- END container -->
+		
+		
 
-        <script src="/assets/bower_components/jquery/jquery.js"></script>
-		<script src="/assets/scripts/vendor/masonry.pkgd.min.js"></script>
+		<!-- scripts -->
+
+	    <!-- build:js /assets/scripts/vendor.js -->
+	    <!-- bower:js -->
+	    <script src="/assets/bower_components/jquery/jquery.js"></script>
+	    <!-- endbower -->
+	    <script src="/assets/scripts/vendor/masonry.pkgd.min.js"></script>
+		<!-- endbuild -->
 
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
@@ -251,19 +259,10 @@
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
 
-        <script src="/assets/scripts/main.js"></script>
-		
-		<!-- local scripts //////////// -->
-		<script>
-			
-			// masonry for layout
-			
-			var container = document.querySelector('.masonry-layout');
-			var msnry = new Masonry( container, {
-			  itemSelector: 'section'
-			});
-			
-		</script>
+	    <!-- build:js({dev/app,.tmp}) /assets/scripts/main.js -->
+	    <script src="/assets/scripts/main.js"></script>	
+	    <!-- endbuild -->
+
 
 </body>
 </html>

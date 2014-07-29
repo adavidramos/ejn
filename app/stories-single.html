@@ -300,11 +300,18 @@
 			
         </div>
 		<!-- END container -->
+		
+		
 
-        <script src="/assets/bower_components/jquery/jquery.js"></script>
-		<script src="/assets/scripts/vendor/masonry.pkgd.min.js"></script>
+		<!-- scripts -->
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+	    <!-- build:js /assets/scripts/vendor.js -->
+	    <!-- bower:js -->
+	    <script src="/assets/bower_components/jquery/jquery.js"></script>
+	    <!-- endbower -->
+	    <script src="/assets/scripts/vendor/masonry.pkgd.min.js"></script>
+		<!-- endbuild -->
+
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
@@ -314,7 +321,10 @@
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
 
-        <script src="/assets/scripts/main.js"></script>
+	    <!-- build:js({dev/app,.tmp}) /assets/scripts/main.js -->
+	    <script src="/assets/scripts/main.js"></script>	
+	    <!-- endbuild -->
+
 
 </body>
 </html>
