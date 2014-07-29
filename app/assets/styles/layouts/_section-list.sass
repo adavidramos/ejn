@@ -1,43 +1,60 @@
 
 // story listings
 // within topics/regions
-
-.results-hed
-	margin-bottom: 0.5em
 	
-.results-group
+.stories-group
 	width: 50%
 	float: left
-	padding: 0 1em 2em 0
+	padding: 0 1em 4em 0
 	@include respond-to($bp-mid)
 		width: 100%		
 		padding: 0 0 2em 0
-	h2
-		margin: 0
-		a,
-		a:visited
-			+subdued-link
-			color: $cT
-		a:hover
-		i
-			font-size: 0.5em
-			color: $cT-light
+	a,
+	a:visited
+		display: block
+		+subdued-link
+		color: $cT
+		border: none
+	a:hover
+		border: none
 	ul
 		margin: 0.5em 0 0 0
 		padding: 0
 	li
-		margin: 0 0 0.4em 0
+		margin: 0 0 0.5em 0
 		padding: 0
 		list-style: none
 		line-height: 1.2em
-		i
-			font-size: 0.8em
-			color: $cT-light
-	.preview-image
-		display: block
-		margin: 0.5em 0 0 0
-		border: none
-	img
-		display: block
-		max-width: 10em
-		margin: 0 0 0.5em 0
+
+.stories-image
+	display: block
+	margin: 0.5em 0 0.75em 0
+	padding: 0 1em 0 0
+	border: none
+
+.stories-group-hed
+	display: inline-block
+	border-bottom: 4px solid $cN-light
+	i
+		font-size: 0.5em
+		color: $cT-light
+
+.stories-hed
+	font-size: 1em
+	margin: 0
+	
+.stories-byline
+	margin: 0
+	font-size: 0.8em
+	color: $cT
+	i
+		color: $cT-mid
+	
+.stories-source
+	margin: 0
+	font-size: 0.8em
+	font-style: italic
+	color: $cT
+	i
+		color: $cT-mid
+		font-style: normal
