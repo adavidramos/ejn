@@ -10,7 +10,10 @@ $("#show-mobile-nav").click(function() {
 
 
 // masonry for layout
-var container = document.querySelector('.masonry-layout');
-var msnry = new Masonry( container, {
-  itemSelector: 'section'
-});
+var container = $('.masonry-layout');
+$container.imagesLoaded ( function() {
+	$container.masonry({
+	    itemSelector: 'section'
+	});
+})
+
