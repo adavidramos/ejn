@@ -9,11 +9,13 @@ $("#show-mobile-nav").click(function() {
 
 
 
-// masonry for layout
-var container = $('.masonry-layout');
-$container.imagesLoaded ( function() {
-	$container.masonry({
-	    itemSelector: 'section'
+// masonry layout for stories
+var masonryContainer = document.querySelector('.masonry-layout');
+var masnry;
+imagesLoaded ( masonryContainer, function() {
+	masnry = new Masonry( masonryContainer, {
+		itemSelector: '.masonry-item'
 	});
-})
+});
+
 
