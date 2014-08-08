@@ -52,7 +52,7 @@ body
 		border: none
 
 h1
-	margin: 0.1em 0 0 0
+	margin: 0.1em 0 0.5em 0
 	font-size: 4.25em
 	line-height: 1.0em
 	font-weight: light
@@ -64,8 +64,20 @@ h1
 
 // h1 for subsection home pages
 .subsection-hed
-	margin-bottom: 0.5em
-		
+	margin-bottom: 1.0em
+	font-size: 2.5em
+	font-weight: bold
+	font-weight: 700
+	
+// h1 for sub-subsection home pages
+.sub-subsection-hed
+	margin-bottom: 2em
+	font-size: 1.5em
+	display: inline-block
+	border-bottom: 4px solid $cN-light
+	font-weight: bold
+	font-weight: 700
+
 h2
 	margin-top: 2.0em
 	font-size: 1.5em
@@ -74,6 +86,14 @@ h2
 	// border-top: 6px solid $cT
 h2:first-child
 	margin-top: 0
+
+// h2 for groups on a list page
+.group-hed
+	display: inline-block
+	border-bottom: 4px solid $cN-light
+	i
+		font-size: 0.5em
+		color: $cT-light
 
 h3
 	margin-top: 2em
