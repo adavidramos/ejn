@@ -40,3 +40,13 @@ a img
 	&:hover
 		color: $cB
 		border-bottom: 1px solid $cB
+
+@mixin hover-link
+	background: none
+	border: none
+	color: inherit
+	&:hover
+		color: $cB
+		h1, h2, h3, h4, h5, h6, p
+			color: $cB
+			// text-decoration: underline

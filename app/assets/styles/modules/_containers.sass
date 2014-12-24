@@ -4,19 +4,17 @@
 
 a
 	color: $cT
-	@include subdued-link
+	@include hover-link
 	display: block
 	margin: 0
 	border: none
-	&:hover
-		border: none
 
 h3, h4, h5, p
 	margin: 0
 
 // container hed
 h3
-	margin: 0 0 0.25em 0
+	margin: 0.25em 0 0.5em 0
 	text-transform: none
 	font-size: 1.2em
 	letter-spacing: 0
@@ -58,12 +56,11 @@ p
 	clear: both
 	padding: 1em 0 2em 0
 	+clearfix
-	border-top: 1px solid $cN-xlight
+	border-top: 1px solid $cN-mid
 
 // container hed
 .nc__hd
-	margin: -0.5em 0 1em 0
-	border-bottom: 1px solid $cN-xxlight
+	margin: -0.75em 0 0em 0
 
 // narrow story for section front-style display
 .ns-vol--med
@@ -73,6 +70,9 @@ p
 	.ns__hd
 		margin-bottom: 0.5em
 	@include respond-to($bp-mid)
+		width: 50%		
+		padding: 0 1em 1em 0
+	@include respond-to($bp-small)
 		width: 100%		
-		padding: 0 0 2em 0
+		padding: 0 0 1em 0
 		
