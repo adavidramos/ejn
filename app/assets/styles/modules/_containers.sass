@@ -15,7 +15,7 @@ h3, h4, h5, p
 
 // container hed
 h3
-	margin: 0.25em 0 0.5em 0
+	margin: -0.5em 0 0.5em 0
 	text-transform: none
 	font-size: 1.2em
 	letter-spacing: 0
@@ -53,23 +53,29 @@ h5
 .nc__hd
 	margin: 0 0 0 0
 
-// narrow story for section front-style display
-.ns-vol--med
-	width: 20%
+// basic slice
+// put backgrounds and borders on the *link*
+.ns
 	float: left
+	height: 12em
 	padding: 0 1.25em 0.5em 0
+	margin: 0 0 1em 0
 	@include respond-to($bp-mid)
 		width: 50%		
 		padding: 0 1em 1em 0
 	@include respond-to($bp-small)
+		clear: both
 		width: 100%		
+		height: auto
 		padding: 0 0 1em 0
-	
+
 	.ns__hd
 		margin-bottom: 0em
 
-	img
+	.ns__img
 		margin: 0 0 0.25em 0
+		height: 8em
+		overflow: hidden
 
 	// slice hed	
 	h4
@@ -79,15 +85,84 @@ h5
 
 	// slice kicker
 	h5
-		margin-bottom: 0.35em
+		margin: 0.5em 0 0.35em 0
 
 	p
 		font-size: 0.85em
 		line-height: 1.3em
 
-// narrow story, picture type
+// small story 
+.ns-vol--sml
+	width: 25%
+	height: auto
+	margin-bottom: 0
+	a
+		background: $cN-xxlight
+		padding: 0.35em
+	h4
+		font-size: 0.85em
+		line-height: 1.3em
+	@include respond-to($bp-mid)
+		width: 50%		
+	@include respond-to($bp-small)
+		width: 100%		
+
+// narrow story 
+.ns-vol--med
+	width: 25%
+	@include respond-to($bp-mid)
+		width: 50%		
+	@include respond-to($bp-small)
+		width: 100%		
+
+// narrow story with an image
 .ns-vol--med.ns-type--picture
 	h4
 		font-size: 0.85em
 		line-height: 1.3em
-		
+
+// large story 
+.ns-vol--lrg
+	width: 50%
+	@include respond-to($bp-mid)
+		clear: both
+		width: 100%
+		padding: 0 1em 1em 0
+	
+	// backgrounds are on the links			
+	a
+		background: $cN-xlight
+		height: 12em
+		+clearfix
+		@include respond-to($bp-mid)
+			height: auto
+			
+	.ns__hd
+		float: left
+		width: 50%
+		margin-bottom: 0em
+		@include respond-to($bp-mid)
+			width: 33.333%		
+
+	.ns__img
+		margin: 0 0 0 0
+		height: 12em
+		// background: $cN-mid
+		@include respond-to($bp-mid)
+			height: auto
+	
+	.ns__bd
+		float: right
+		width: 50%
+		padding-left: 1em
+		padding-right: 0.5em
+		@include respond-to($bp-mid)
+			width: 66.667%	
+			padding-bottom: 1em	
+
+	// slice hed	
+	h4
+		margin-bottom: 0.25em
+		font-size: 1.15em
+		line-height: 1.15em
+
