@@ -2,41 +2,45 @@
 
 // typography ----------------------------------
 
-a,
-a:visited
-	color: $cT
-	@include hover-link
-	display: block
-	margin: 0
-	border: none
+// only elements inside a story container
+// note the indentation
+.nc
 
-h3, h4, h5, p
-	margin: 0
-
-// container hed
-h3
-	margin: -0.5em 0 0.5em 0
-	text-transform: none
-	font-size: 1.2em
-	letter-spacing: 0
-	font-weight: bold
-	font-weight: 600
-	a
+	a,
+	a:visited
 		color: $cT
-		@include subdued-link
+		@include hover-link
 		display: block
 		margin: 0
 		border: none
-		&:hover
-			border: none
-			background: none
 
-// basic slice kicker
-h5
-	font-style: normal
-	font-size: 0.7em
-	letter-spacing: 0.08em
-	text-transform: uppercase
+	h3, h4, h5, p
+		margin: 0
+
+	// container hed
+	h3
+		margin: -0.5em 0 0.5em 0
+		text-transform: none
+		font-size: 1.2em
+		letter-spacing: 0
+		font-weight: bold
+		font-weight: 600
+		a
+			color: $cT
+			@include subdued-link
+			display: block
+			margin: 0
+			border: none
+			&:hover
+				border: none
+				background: none
+
+	// basic slice kicker
+	h5
+		font-style: normal
+		font-size: 0.7em
+		letter-spacing: 0.08em
+		text-transform: uppercase
 	
 		
 // containers, slices, and display types and volumes ---------------
