@@ -1,0 +1,38 @@
+// site front page
+
+// intro block 
+#front-intro
+	background: url('/assets/images/map_bg_960.png')
+	padding: 2em 2em 2em 2em
+	@include respond-to($bp-mid)
+	
+	h4
+	@include respond-to($bp-mid)
+		margin: 0 0 1em 0
+
+	p
+		float: left
+		width: 33%
+		padding-right: 2em
+		margin: 1em 0 2em 0
+		@include respond-to($bp-mid)
+			width: 100%
+			clear: both
+			margin: 0 0 1em 0
+			padding: 0
+		
+	.action
+		clear: both
+		width: 100%
+		text-align: right
+		
+	// we have to reset the buttons
+	.btn-action,
+	.btn-action:visited
+		margin: 0 0 1em 1em
+		@extend .btn-action
+		
+	.btn-alt,
+	.btn-alt:visited
+		margin: 0 0 1em 1em
+		@extend .btn-subdued-light		

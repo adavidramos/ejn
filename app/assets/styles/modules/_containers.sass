@@ -53,6 +53,15 @@
 	+clearfix
 	border-top: 1px solid $cN-mid
 
+// space on top of first container on page	
+.nc:first-child
+	margin-top: 2em
+
+// container without rule
+.nc--minimal
+	border: none
+	padding: 0
+
 // container hed
 .nc__hd
 	margin: 0 0 0 0
@@ -253,3 +262,15 @@
 	// slice kicker	
 	h5
 		margin-top: 1.5em
+
+// complex full-width slices that contain more than one link
+// special purposes like front intro
+.ns-type--special
+	height: auto
+	width: 100%
+	margin-bottom: 2em
+	a
+		height: auto
+		display: inline-block
+	.ns__bd
+		width: 100%
