@@ -1,0 +1,25 @@
+
+
+
+#footer
+	width: 100%
+	background: $cN-light
+
+.footer__bd	
+	max-width: $pageWidth
+	width: 90%
+	margin: 0 auto
+	padding: 1em 0 4em 0
+	@include respond-to($bp-mid)
+		width: 80%
+	@include respond-to($bp-small)
+		width: 100%
+		margin: 0
+		padding-left: 1.25em
+		padding-right: 1.25em
+		padding-bottom: 2em
+	a
+		display: inline-block
+		color: $cT
+		+hover-link
+		padding: 0
