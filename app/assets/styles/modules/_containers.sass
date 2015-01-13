@@ -230,10 +230,15 @@
 // extra-large story with picture
 .ns-vol--xl.ns-type--picture
 	height: 12em
+	@include respond-to($bp-mid)
+		height: auto
 	
 	a
 		height: 12em
-		
+		@include respond-to($bp-mid)
+			height: auto
+			background: none
+			
 	.ns__hd
 		float: left
 		width: 50%
