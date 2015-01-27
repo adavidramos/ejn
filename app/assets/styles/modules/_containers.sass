@@ -294,3 +294,34 @@
 		display: inline-block
 	.ns__bd
 		width: 100%
+		
+		
+// explanatory/intro text boxes
+.ns-type--about
+	padding: 2em 2em 2em 2em
+	@include respond-to($bp-mid)
+	background-color: $cN-xlight	
+	
+	h4
+		margin: 0 0 0.5em 0
+		font-size: 1.5em
+
+	p
+		font-size: 1.25em
+		margin: 0 0 1em 0
+	
+	.action
+		clear: both
+		width: 100%
+		text-align: right
+	
+	// we have to reset the buttons
+	.btn-action,
+	.btn-action:visited
+		margin: 0 0 1em 1em
+		@extend .btn-action
+	
+	.btn-alt,
+	.btn-alt:visited
+		margin: 0 0 1em 1em
+		@extend .btn-subdued-light			
