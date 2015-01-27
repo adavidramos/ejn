@@ -144,6 +144,7 @@ module.exports = function (grunt) {
         // Compiles Sass to CSS and generates necessary files if requested
         compass: {
             options: {
+				// outputStyle: 'expanded',
                 sassDir: '<%= yeoman.app %>/assets/styles',
                 cssDir: '.tmp/assets/styles',
                 generatedImagesDir: '.tmp/assets/images/generated',
