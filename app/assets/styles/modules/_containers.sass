@@ -159,7 +159,8 @@
 	
 	// backgrounds are on the links			
 	a
-		background: $cN-xlight
+		// background: $cN-xlight
+		background: transparent
 		height: 12em
 		+clearfix
 		@include respond-to($bp-mid)
@@ -325,3 +326,9 @@
 	.btn-alt:visited
 		margin: 0 0 1em 1em
 		@extend .btn-subdued-light			
+		
+		
+// additional space above a container
+.nc--space-top
+	margin-top: 6em
+	
